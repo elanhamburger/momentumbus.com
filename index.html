@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Getting around UMD has never been easier!">
+    <meta name="keywords" content="UMD bus, UMD shuttle, shuttle-UM, University of Maryland bus">
+    <title>MomentUM</title>
+    <style>
+      body {
+        background-color: #00194B;
+        color: white;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      h1 {
+        font-weight: 400;
+        font-size: 4em;
+      }
+
+      h2 {
+        font-weight: 400;
+        font-size: 2em;
+      }
+
+      a {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <h1>Looking for MomentUM?</h1>
+      <h2>We've permanently moved to <a href="https://umdb.us">umdb.us</a>.</h2>
+      <p>Your browser may be storing the old address. <a href="javascript:redirect()">Click here</a> to attempt to force your browser to forget. If that doesn't work, you may need to <a href="https://www.refreshyourcache.com/en/home/">clear your cache</a>.</p>
+    </div>
+    <script>
+      function redirect() {
+        fetch('https://umdb.us', { method: 'POST' })
+        .then(window.location.replace('https://umdb.us'));
+      }
+    </script>
+  </body>
+</html>
